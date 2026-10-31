@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0f172a">
+    <title>Rock Paper Scissors | Play</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="game-container">
+        <header>
+            <p class="tag">MINI GAME</p>
+            <h1>Rock Paper Scissors</h1>
+            <p class="subtitle">Choose your move. Beat the computer.</p>
+        </header>
+
+        <section class="scoreboard" aria-label="Scoreboard">
+            <div class="score-card">
+                <span>You</span>
+                <strong id="user-score">0</strong>
+            </div>
+
+            <div class="round-info">
+                <span>ROUND</span>
+                <strong id="round">0 / 5</strong>
+            </div>
+
+            <div class="score-card">
+                <span>Computer</span>
+                <strong id="comp-score">0</strong>
+            </div>
+        </section>
+
+        <section class="game-area">
+            <h2>Make your move</h2>
+
+            <div class="choices">
+                <button class="choice" data-choice="rock"
+                    aria-label="Choose rock">
+                    <span class="emoji">✊</span>
+                    <span>Rock</span>
+                </button>
+
+                <button class="choice" data-choice="paper"
+                    aria-label="Choose paper">
+                    <span class="emoji">✋</span>
+                    <span>Paper</span>
+                </button>
+
+                <button class="choice" data-choice="scissors"
+                    aria-label="Choose scissors">
+                    <span class="emoji">✌️</span>
+                    <span>Scissors</span>
+                </button>
+            </div>
+
+            <div class="result-box" aria-live="polite">
+                <p id="moves">Your move vs Computer</p>
+                <h2 id="msg">Ready to play?</h2>
+                <p id="detail">First to win 3 rounds wins the game.</p>
+            </div>
+        </section>
+
+        <section class="actions">
+            <button id="reset-btn" class="reset-btn">
+                ↻ New Game
+            </button>
+        </section>
+
+        <footer>
+            <p>Built with HTML, CSS & JavaScript</p>
+        </footer>
+    </main>
+</body>
+</html>
